@@ -1,7 +1,7 @@
 # Team-Maker
 
 * Landing_ex é um projeto bem simples apenas com a idea de mostrar uma página inicial para aqueles que buscam algo parecido
-* Link do projeto: 
+* Link do projeto: https://landing-ex.vercel.app
 ## 🛠️ Construído com
 
 Ferramentas:
