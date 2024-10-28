@@ -1,0 +1,158 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Barra superior */
+.top-bar {
+    background-color: #0E141B;
+    color: #FFF;
+    text-align: right;
+    padding: 1vh 15vh;
+    font-size: 2vh;
+}
+
+.top-bar span {
+    margin: 0 1vh;
+}
+
+@media (max-width: 1024px) {
+    .top-bar{
+        padding: 1vh 0vh;
+    }
+}
+
+/* Menu de Navegação*/
+
+.dropdown:hover > .dropdown-menu,
+.dropend:hover > .dropdown-menu {
+  display: block;
+  margin-top: 0.125em;
+  margin-left: 0.125em;
+}
+  @media (min-width: 1024px){
+    .dropend:hover > .dropdown-menu {
+        position: absolute;
+        top: 0;
+        left: 100%;
+      }
+  }
+
+/* Seção principal */
+.main-container{
+    padding: 0 15vh;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: self-start;
+    margin: 2vh 0;
+}
+
+.container {
+    max-width: 60%;
+    padding-right: 1vh;
+}
+
+.image-box {
+    max-width: 30%;
+}
+
+.image-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 1024px) {
+
+    .main-container{
+        padding: 0 0vh;
+    }
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        max-width: 100%;
+        padding-right: 0;
+    }
+
+    .image-box {
+        max-width: 80%;
+        margin-top: 20px;
+    }
+}
+
+/* Destaque */
+
+.destaque{
+    padding-left: 2vh;
+}
+.image-container {
+    margin-top: 3vh;
+    display: flex;
+    gap: 5vh;
+    margin-bottom: 3vh;
+    
+}
+.image-item {
+    text-align: center;
+    
+}
+
+.image-item a{
+    text-decoration: none; 
+}
+.image-item p{
+    margin-top: 1vh;
+}
+
+@media (max-width: 1024px) {
+    .image-container{
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .image-item {
+        width: 40vh;
+        text-align: center;
+    }
+}
+
+/* Rodapé */
+footer {
+    background-color: #0E141B;
+    color: white;
+    text-align: center;
+    padding: 1vh 0;
+}
+
+.footer-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 3vh;
+    margin-bottom: 6vh;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer p {
+    margin-top: 0.6vh;
+}
